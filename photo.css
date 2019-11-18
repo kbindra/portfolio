@@ -1,0 +1,44 @@
+* {
+    box-sizing: border-box;
+}
+body {
+    margin: 0;
+    background-color: #f0f0f0;
+}
+.button {
+    float: right;
+    display: block;
+    background-color: rgb(167, 162, 162);
+    border: none;
+    color: black;
+    padding: 0px 22px;
+    text-align: center;
+    text-decoration: none;
+    font-family: 'Nunito', sans-serif;
+    font-size: 16px;
+    margin: 2px;
+    -webkit-box-shadow: 0 1px 6px rgba(0,0,0,.27),0 0 40px rgba(0,0,0,.06) inset;
+    -moz-box-shadow: 0 1px 6px rgba(0,0,0,.27),0 0 40px rgba(0,0,0,.06) inset;
+    box-shadow: 0 1px 6px rgba(58, 49, 49, 0.27),0 0 40px rgba(0,0,0,.06) inset;
+    cursor: pointer;
+}
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px,1fr));
+}
+img {
+    padding: 15px;
+    width: 100%;
+    display: block;
+   -webkit-box-shadow: 0 1px 6px rgba(0,0,0,.27),0 0 40px rgba(0,0,0,.06) inset;
+   -moz-box-shadow: 0 1px 6px rgba(0,0,0,.27),0 0 40px rgba(0,0,0,.06) inset;
+   box-shadow: 0 1px 6px rgba(58, 49, 49, 0.27),0 0 40px rgba(0,0,0,.06) inset;
+}
+.responsive {
+    padding: 0 6px;
+    float: left;
+    width: 24.99999%;
+}
+div.grid img:hover {
+   opacity: 0.3;
+}

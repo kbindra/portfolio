@@ -1,0 +1,258 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body {
+    background-color: lightblue;
+}
+
+.grid {
+    display: grid;
+    grid-auto-columns: auto;
+    grid-template-rows: 100px;
+    grid-template-areas: 
+    "title"
+    "header"
+    "left-side"
+    "right-side"
+    "footer";
+}
+.title {
+-webkit-box-shadow: 0 1px 6px rgba(0,0,0,.27),0 0 40px rgba(0,0,0,.06) inset;
+-moz-box-shadow: 0 1px 6px rgba(0,0,0,.27),0 0 40px rgba(0,0,0,.06) inset;
+box-shadow: 0 1px 6px rgba(58, 49, 49, 0.27),0 0 40px rgba(0,0,0,.06) inset;
+    grid-area: title;
+}
+.header {
+    -webkit-box-shadow: 0 1px 6px rgba(0,0,0,.27),0 0 40px rgba(0,0,0,.06) inset;
+    -moz-box-shadow: 0 1px 6px rgba(0,0,0,.27),0 0 40px rgba(0,0,0,.06) inset;
+    box-shadow: 0 1px 6px rgba(58, 49, 49, 0.27),0 0 40px rgba(0,0,0,.06) inset;
+    background-color:rgb(168, 167, 167);
+    grid-area: header;
+    
+}
+.left-side {
+    -webkit-box-shadow: 0 1px 6px rgba(0,0,0,.27),0 0 40px rgba(0,0,0,.06) inset;
+    -moz-box-shadow: 0 1px 6px rgba(0,0,0,.27),0 0 40px rgba(0,0,0,.06) inset;
+    box-shadow: 0 1px 6px rgba(58, 49, 49, 0.27),0 0 40px rgba(0,0,0,.06) inset;
+    background-color: white;
+    grid-area: left-side;
+}
+.right-side {
+    -webkit-box-shadow: 0 1px 6px rgba(0,0,0,.27),0 0 40px rgba(0,0,0,.06) inset;
+    -moz-box-shadow: 0 1px 6px rgba(0,0,0,.27),0 0 40px rgba(0,0,0,.06) inset;
+    box-shadow: 0 1px 6px rgba(58, 49, 49, 0.27),0 0 40px rgba(0,0,0,.06) inset;
+    background-color: white;
+    grid-area: right-side;
+}
+.footer {
+    -webkit-box-shadow: 0 1px 6px rgba(0,0,0,.27),0 0 40px rgba(0,0,0,.06) inset;
+    -moz-box-shadow: 0 1px 6px rgba(0,0,0,.27),0 0 40px rgba(0,0,0,.06) inset;
+    box-shadow: 0 1px 6px rgba(58, 49, 49, 0.27),0 0 40px rgba(0,0,0,.06) inset;
+    background-color: white;
+    grid-area: footer;
+}
+.icon-bar a:hover,.icon-bar a:focus,.icon-bar a:active {
+    background-color: white;
+    color: black;
+}
+
+.fa-facebook 
+{
+    background: rgb(64, 64, 245);
+    color: white;
+}
+.fa-linkedin
+ {
+    background:rgb(21, 21, 196);
+    color: white;
+}
+.fa-github
+{
+    background: black;
+    color: white;
+}
+.fa 
+{
+    padding: 10px;
+    font-size: 50px;
+    width: 14px;
+    text-align: center;
+    margin: 5px 5px;
+    text-decoration: none;
+    border-radius: 50%;
+}
+nav
+{
+    width: 100%; 
+} 
+nav ul li {
+    float: left;
+    list-style: none;
+    position: relative;
+}
+nav ul li:active {
+    background-color: gray;
+}
+nav ul li a {
+    display: block ;
+    font-family: 'Roboto', sans-serif;;
+    color: black;
+    font-size: 14px;
+    padding: 10px 14px;
+    text-decoration: none;
+}
+nav ul li ul {
+    display: none ;
+    position: absolute;
+    background-color: white;
+    border-radius: 0px 0px 4px 4px;
+}
+nav ul li:hover ul,nav ul li:focus ul,nav ul li:active ul {
+    width: 150px;
+    display: block ;
+    cursor: pointer;
+}
+nav ul li ul li a {
+    padding: 8px 24px;
+}
+nav ul li ul li a:active {
+    width: 150px;
+    background-color: yellow;
+}
+nav div{
+    float: right;
+}
+.wal ul li a:active {
+    background-color: lightblue;
+}
+
+@media only screen and (min-width: 768px) {
+    .grid {
+        margin: 20px auto;
+        width: 1000px;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-auto-rows: 100px;
+        grid-template-areas: 
+        "title title title"
+        "header header header"
+        "left-side left-side right-side"
+        "footer footer footer";
+    
+    }
+    .title {
+    -webkit-box-shadow: 0 1px 6px rgba(0,0,0,.27),0 0 40px rgba(0,0,0,.06) inset;
+    -moz-box-shadow: 0 1px 6px rgba(0,0,0,.27),0 0 40px rgba(0,0,0,.06) inset;
+    box-shadow: 0 1px 6px rgba(58, 49, 49, 0.27),0 0 40px rgba(0,0,0,.06) inset;
+       grid-area: title;
+    }
+    .header {
+        -webkit-box-shadow: 0 1px 6px rgba(0,0,0,.27),0 0 40px rgba(0,0,0,.06) inset;
+        -moz-box-shadow: 0 1px 6px rgba(0,0,0,.27),0 0 40px rgba(0,0,0,.06) inset;
+        box-shadow: 0 1px 6px rgba(58, 49, 49, 0.27),0 0 40px rgba(0,0,0,.06) inset;
+        background-color:rgb(168, 167, 167);
+        grid-area: header;
+        
+    }
+    .left-side {
+        -webkit-box-shadow: 0 1px 6px rgba(0,0,0,.27),0 0 40px rgba(0,0,0,.06) inset;
+        -moz-box-shadow: 0 1px 6px rgba(0,0,0,.27),0 0 40px rgba(0,0,0,.06) inset;
+        box-shadow: 0 1px 6px rgba(58, 49, 49, 0.27),0 0 40px rgba(0,0,0,.06) inset;
+        background-color: white;
+        grid-column-start: 1;
+        grid-column-end: 3;
+        grid-row-start: 3;
+        grid-row-end: 15;
+    }
+    .right-side {
+        -webkit-box-shadow: 0 1px 6px rgba(0,0,0,.27),0 0 40px rgba(0,0,0,.06) inset;
+        -moz-box-shadow: 0 1px 6px rgba(0,0,0,.27),0 0 40px rgba(0,0,0,.06) inset;
+        box-shadow: 0 1px 6px rgba(58, 49, 49, 0.27),0 0 40px rgba(0,0,0,.06) inset;
+        background-color: white;
+        grid-column-start: 3;
+        grid-column-end: 4;
+        grid-row-start: 3;
+        grid-row-end: 15;
+    }
+    .footer {
+        -webkit-box-shadow: 0 1px 6px rgba(0,0,0,.27),0 0 40px rgba(0,0,0,.06) inset;
+        -moz-box-shadow: 0 1px 6px rgba(0,0,0,.27),0 0 40px rgba(0,0,0,.06) inset;
+        box-shadow: 0 1px 6px rgba(58, 49, 49, 0.27),0 0 40px rgba(0,0,0,.06) inset;
+        background-color: white;
+        grid-area: footer;
+        grid-row-start: 14;
+        grid-row-end: 16;
+    }
+    .icon-bar a:hover {
+        background-color: white;
+        color: black;
+    }
+    
+    .fa-facebook 
+    {
+        background: rgb(64, 64, 245);
+        color: white;
+    }
+    .fa-linkedin
+     {
+        background:rgb(21, 21, 196);
+        color: white;
+    }
+    .fa-github
+    {
+        background: black;
+        color: white;
+    }
+    .fa 
+    {
+        padding: 20px;
+        font-size: 50px;
+        width: 15px;
+        text-align: center;
+        margin: 5px 5px;
+        text-decoration: none;
+        border-radius: 50%;
+    }
+    nav
+    {
+        width: 100%; 
+    } 
+    nav ul li {
+        float: left;
+        list-style: none;
+        position: relative;
+    }
+    nav ul li:hover {
+        background-color: gray;
+    }
+    nav ul li a {
+        display: block ;
+        font-family: 'Roboto', sans-serif;;
+        color: black;
+        font-size: 20px;
+        padding: 40px 45px;
+        text-decoration: none;
+    }
+    nav ul li ul {
+        display: none ;
+        position: absolute;
+        background-color: white;
+        border-radius: 0px 0px 4px 4px;
+    }
+    nav ul li:hover ul {
+        width: 200px;
+        display: block ;
+    }
+    nav ul li ul li a {
+        padding: 8px 24px;
+    }
+    nav ul li ul li a:hover {
+        width: 200px;
+        background-color: yellow;
+    }
+    nav div{
+        float: right;
+    }
+}
+
